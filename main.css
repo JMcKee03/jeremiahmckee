@@ -253,7 +253,7 @@ nav ul li a:hover::after{
         inset 0 0 30px #574b4b, /* Inner larger glow */
         inset 0 0 40px #574b4b; /* Inner even larger glow */
     color: rgb(255, 255, 255);
-    height: 90vh;
+    height: 70vh;
     width: 55%;
     font-size: .9vw;
     font-weight: 800;
