@@ -255,7 +255,7 @@ nav ul li a:hover::after{
     color: rgb(255, 255, 255);
     height: 70vh;
     width: 55%;
-    font-size: .9vw;
+    font-size: .8vw;
     font-weight: 800;
     padding: 2vw;
     border-radius: 5vw;
@@ -267,7 +267,6 @@ nav ul li a:hover::after{
 
 .about-me-background p{
     text-align: left;
-    height: 90%;
 }
 
 .Home-col-2{
