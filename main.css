@@ -255,7 +255,7 @@ nav ul li a:hover::after{
     color: rgb(255, 255, 255);
     height: 70%;
     width: 55%;
-    font-size: .85vw;
+    font-size: .8vw;
     font-weight: 800;
     padding: 2vw;
     border-radius: 5vw;
