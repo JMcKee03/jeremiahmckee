@@ -267,6 +267,7 @@ nav ul li a:hover::after{
 
 .about-me-background p{
     text-align: left;
+    height: 90%;
 }
 
 .Home-col-2{
