@@ -556,6 +556,14 @@ nav ul li a:hover::after{
     flex-basis: 80%;
 }
 
+.link-properties h6{
+    color: white;
+}
+
+.link-properties h6:hover{
+    color:#9b1919;
+}
+
 #contact{
     background-size: cover;
     background-position: center, cover;
