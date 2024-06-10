@@ -556,11 +556,11 @@ nav ul li a:hover::after{
     flex-basis: 80%;
 }
 
-.link-properties h6{
+.link-properties h6 p{
     color: white;
 }
 
-.link-properties h6:hover{
+.link-properties h6 p:hover{
     color:#9b1919;
 }
 
