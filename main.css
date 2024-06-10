@@ -1174,4 +1174,11 @@ nav .fa-sharp{
             }
 
 }
+@media only screen and (max-width: 500px){
+        .about-me-background{
+                font-size: 2vw;
+                padding-bottom: 65%;
+        }
+}
+
 
