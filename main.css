@@ -258,6 +258,7 @@ nav ul li a:hover::after{
     font-size: .8vw;
     font-weight: 800;
     padding: 2vw;
+    padding-bottom: 25%;
     border-radius: 5vw;
     text-align: center;
     border-style: inset;    
@@ -1174,11 +1175,10 @@ nav .fa-sharp{
             }
 
 }
+
 @media only screen and (max-width: 500px){
         .about-me-background{
                 font-size: 2vw;
                 padding-bottom: 65%;
         }
 }
-
-
