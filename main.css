@@ -742,6 +742,41 @@ nav .fa-sharp{
         margin-left: 0;
     }
 
+    /* -------------    side menu scroll  -------------- */
+
+        /* Adjust nav styles */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background: linear-gradient(to bottom, rgb(0,0,0));
+    padding: 10px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    transition: background-color 1.5s ease;
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Adjust nav ul styles */
+nav ul {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    font-style: oblique;
+    font-weight: 800;
+    list-style: none;
+    gap: 15px;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    width: 100%; /* Make sure the ul takes the full width of the nav */
+}
+
+    
+        /* ------------------   End Side menu Scroll  -------------- */
     nav ul{
         padding-left: 0;
         background: #626c77fb;
@@ -910,6 +945,8 @@ nav .fa-sharp{
 
 @media only screen and (max-width: 1000px){
 
+    
+
         .background-image {
             background-size: contain;
             height: 100vh;
@@ -1072,9 +1109,7 @@ nav .fa-sharp{
             .container3{
                 padding-bottom: 0%;
             }
-            .container{
-                padding-top: 30%;
-            }
+            
 
             .about-me-background{
                 float: none;
@@ -1176,7 +1211,7 @@ nav .fa-sharp{
 
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 500px){
         .about-me-background{
                 font-size: 2vw;
                 padding-bottom: 85%;
