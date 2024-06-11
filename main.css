@@ -556,6 +556,21 @@ nav ul li a:hover::after{
     flex-basis: 80%;
 }
 
+.contact-left h6 p{
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.link-properties h6:hover{
+    color:#9b1919;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link-properties h6:hover::after{
+    color:#9b1919;
+    text-decoration: underline;
+}
+
 .link-properties h6 p{
     color: white;
 }
