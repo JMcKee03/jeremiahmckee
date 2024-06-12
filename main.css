@@ -558,7 +558,7 @@ nav ul li a:hover::after{
 
 .contact-left h6 p span{
     color: #ffffff;
-    text-decoration: underline;
+    text-decoration: none !important;
 }
 
 .contact-left h6 p span:hover{
