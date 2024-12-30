@@ -1,0 +1,84 @@
+html {
+
+    font-family: 'Times New Roman', Times, serif;
+}
+
+header {
+    width: 100%; /* Make the header span across the screen */
+    min-height: 60px; /* Set a minimum height for better alignment */
+}
+
+header ul {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+header ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+header ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 0; /* Remove default body margin */
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    border: 2px solid black;
+    width: 1000px;
+    background-color: green;
+}
+
+ul.column {
+    display: grid;
+    place-items: center;
+}
+
+ul.column p {
+    margin: 5px;
+    width: 75px;
+    height: 75px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+}
+
+ul.column:hover {
+    cursor: pointer;
+    background-color: aquamarine;
+}
+
+@media (max-width: 700px) {
+    .board {
+        width: 500px;
+    }
+    ul.column p {
+        width: 55px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 520px) {
+    .board {
+        width: 400px;
+    }
+    ul.column p {
+        width: 40px;
+        height: 40px;
+    }
+}

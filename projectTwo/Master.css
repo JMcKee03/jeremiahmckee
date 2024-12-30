@@ -1,0 +1,81 @@
+html{
+    background: linear-gradient(135deg,rgb(130, 216, 0),green);
+    background-attachment: fixed;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    background-color: rgba(145, 145, 145, .5);
+    border-radius: 30px;
+    box-shadow: darkgreen 10px 10px 15px;
+}
+
+header{
+    text-align: center;
+    margin: 0%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    border-radius: 30px;
+    text-shadow: Gray 5px 5px 5px;
+}
+header ul{
+    text-shadow: green 5px 5px 5px;
+    font-size: 2em;
+    border-radius: 30px;
+    width: 80%;
+    margin-left: 10%;
+}
+h1{
+    font-size: 5.5em;
+}
+h2{
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    margin: 0%;
+    text-shadow: black 5px 5px 5px;
+    border-radius: 15px;
+    padding: 1%;
+}
+h4{
+    font-size: 2em;
+}
+div.gamelink{
+    position: relative;
+    width: 60%;
+    overflow: auto;
+    background-color: gainsboro;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 5%;
+    margin-left: 20%;
+    box-shadow: 10px 10px 25px rgb(43, 43, 43);
+    border-radius: 15px;
+}
+div.gamelink a{
+    text-decoration: none;
+}
+div.gamelink a div p{
+    color: black;
+    text-align: left;
+    text-indent: 50px;
+    font-size: 2em;
+    margin: 2.5%;
+    padding: 0%;
+}
+div.gamelink a div img{
+    margin: 2.5%;
+    float: left;
+    width: 45%;
+    height: auto;
+    border-radius: 15px;
+}
+footer{
+    margin-top: 5%;
+    border-radius: 15px;
+}

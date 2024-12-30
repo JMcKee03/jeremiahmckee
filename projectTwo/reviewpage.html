@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Review</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="reviewpage.css">
+    <link rel="stylesheet" href="Master.css">
+    <script src="reviewpage.js"></script>
+</head>
+<body>
+
+<!-- Header Section -->
+<header>
+    <h1>Game Website Review</h1>
+    <ul>
+        <li><a href="Homepage.html">Home</a></li>
+        <li><a href="TicTacToe.html">Tic Tac Toe</a></li>
+        <li><a href="C4.html">Connect 4</a></li>
+        <li><a href="RPS.html">Rock Paper Scissors</a></li>
+        <li><a href="reviewpage.html">Review Page</a></li>
+    </ul>
+</header>
+
+<div class="container">
+    
+    <form id="reviewForm" onsubmit="handleFormSubmit(event)">
+        <fieldset>
+            <legend>Your Information</legend>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Rate Our Games</legend>
+
+            <!-- Tic Tac Toe Rating -->
+            <div class="rating-section">
+                <label for="tic-tac-toe-rating" class="rating-label">Tic Tac Toe</label>
+                <div>
+                    <label><input type="radio" name="tic_tac_toe_rating" value="1"> 1</label>
+                    <label><input type="radio" name="tic_tac_toe_rating" value="2"> 2</label>
+                    <label><input type="radio" name="tic_tac_toe_rating" value="3"> 3</label>
+                    <label><input type="radio" name="tic_tac_toe_rating" value="4"> 4</label>
+                    <label><input type="radio" name="tic_tac_toe_rating" value="5"> 5</label>
+                </div>
+            </div>
+
+            <!-- Rock Paper Scissors Rating -->
+            <div class="rating-section">
+                <label for="rock-paper-scissors-rating" class="rating-label">Rock Paper Scissors</label>
+                <div>
+                    <label><input type="radio" name="rock_paper_scissors_rating" value="1"> 1</label>
+                    <label><input type="radio" name="rock_paper_scissors_rating" value="2"> 2</label>
+                    <label><input type="radio" name="rock_paper_scissors_rating" value="3"> 3</label>
+                    <label><input type="radio" name="rock_paper_scissors_rating" value="4"> 4</label>
+                    <label><input type="radio" name="rock_paper_scissors_rating" value="5"> 5</label>
+                </div>
+            </div>
+
+            <!-- Connect 4 Rating -->
+            <div class="rating-section">
+                <label for="connect-4-rating" class="rating-label">Connect 4</label>
+                <div>
+                    <label><input type="radio" name="connect_4_rating" value="1"> 1</label>
+                    <label><input type="radio" name="connect_4_rating" value="2"> 2</label>
+                    <label><input type="radio" name="connect_4_rating" value="3"> 3</label>
+                    <label><input type="radio" name="connect_4_rating" value="4"> 4</label>
+                    <label><input type="radio" name="connect_4_rating" value="5"> 5</label>
+                </div>
+            </div>
+
+            <label for="comments">Additional Comments</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </fieldset>
+
+        <button type="submit">Submit Review</button>
+    </form>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <h3>Thank you for your feedback!</h3>
+    </div>
+</footer>
+
+</body>
+</html>

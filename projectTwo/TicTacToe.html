@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe!</title>
+    
+    <link rel="stylesheet" href="TTT.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="Master.css">
+</head>
+<body>
+    <header>
+        <h1>Tic-Tac-Toe</h1>
+        <ul>
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="TicTacToe.html">Tic Tac Toe</a></li>
+            <li><a href="C4.html">Connect 4</a></li>
+            <li><a href="RPS.html">Rock Paper Scissors</a></li>
+            <li><a href="reviewpage.html">Review Page</a></li></ul>
+    </header>
+    <div class="container">
+        
+        <div class="game-board" id="gameBoard">
+            <!-- Cells for the game will be generated here -->
+        </div>
+        <div class="status" id="status">Player X's Turn</div>
+        <div class="scoreboard">
+            <p>Player X Wins: <span id="playerXWins">0</span></p>
+            <p>Player O Wins: <span id="playerOWins">0</span></p>
+        </div>
+        
+        <button class="restart" id="restartBtn">Restart Game</button>
+    </div>
+    <div class="description-container">
+        <p id="rightDescription">
+            Welcome to Tic-Tac-Toe! This classic game lets two players compete in a match of strategy and fun. Take turns placing your mark, X or O, to get three in a row!
+        <br>
+            How does Tic-Tac-Toe function? It starts with the game board being initialized or reset with the code createBoard(), creating cells 0 through 8, giving us a 3x3 grid. Next, when you click a cell on your turn, the line handleCellClick(event) is called, updating the cell that is clicked with either an X or an O. After players finish a game with either a win or a tie, the event checkWin() is called to check if someone won or tied. Finally, when you want to restart, you click the restart button which calls restartBtn, calling createBoard() and resetting the board!
+        </p>
+    </div>
+    <script src="TTT.js"></script>
+    <footer>
+        <div class="footer-content">
+            <h3>Contact Us</h3>
+            <p>Phone: (555) 123-4567</p>
+            <p>Email: contact@rockpaperscissors.com</p>
+        </div>
+    </footer>
+</body>
+</html>

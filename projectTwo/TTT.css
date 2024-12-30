@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    background-color: #f0f0f0;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center horizontally */
+    background: linear-gradient(135deg, #d1fdff, #d1fdff);
+    min-height: 100vh; /* Ensure it spans the entire viewport */
+    margin: 0;
+}
+
+
+header {
+    width: 100%; /* Make the header span across the screen */
+    min-height: 60px; /* Set a minimum height for better alignment */
+}
+
+header ul {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    background-color: #dddddd;
+}
+
+header ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+header ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    
+}
+
+.description-container {
+    position: fixed;
+    right: 225px; /* Distance from the right edge */
+    top: 43.5%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust to actual center */
+    max-width: 350px; /* Optional: Limit the paragraph width */
+    text-align: left; /* Align text to the left */
+}
+
+#rightDescription {
+    font-size: 1em; /* Font size */
+    line-height: 1.5; /* Line spacing for readability */
+    color: #333; /* Text color */
+}
+
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 5px;
+    margin: 20px auto; /* Center the game board */
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    background-color: #fff;
+    border: 2px solid #333;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.cell:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.1); /* Slight zoom effect */
+}
+
+.cell.X {
+    color: #ff6f61;
+    text-shadow: 2px 2px 4px rgba(255, 0, 0, 0.5);
+}
+
+.cell.O {
+    color: #61a6ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 255, 0.5);
+}
+
+
+.status {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+.restart {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.restart:hover {
+    background-color: #555;
+}
+
+.scoreboard {
+    margin: 20px 0;
+    text-align: center;
+    font-size: 1.2em;
+    color: #333;
+}
+.scoreboard p {
+    margin: 5px 0;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <script src="rps.js" defer></script>
+    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="RPS.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="master.css">
+</head>
+<body>
+    <header>
+        <h1 class="game-title" style="color: black; padding: 47px;">ROCK PAPER SCISSORS</h1>
+        <ul style="background: greenyellow;">
+            <li><a href="Homepage.html">Home</a></li>
+            <li><a href="TicTacToe.html">Tic Tac Toe</a></li>
+            <li><a href="C4.html">Connect 4</a></li>
+            <li><a href="RPS.html">Rock Paper Scissors</a></li>
+            <li><a href="reviewpage.html">Review Page</a></li>
+        </ul>
+    </header>
+<div class="rules">
+            Rules
+            <div class="rules_description">
+                <p>Rock-paper-scissors is a simple hand game played between two participants. 
+                    In this case it's between you and the computer. The rules are straightforward: 
+                    rock beats scissors by smashing 
+                    them, scissors beat paper by cutting it, and paper beats rock by wrapping 
+                    around it. If both players choose the same move, the round results in a tie. 
+                    The game can be played in a single round or as a series, with the winner 
+                    determined by who wins the most rounds.</p>
+            </div>
+         </div>
+    <div class="RPS">
+        <!-- Player choices -->
+         
+        <div class="item" data-choice="Rock">
+            <h2>Rock</h2>
+            <img src="rock.png" alt="Rock" class="choice-icon">
+        </div>
+        <div class="item" data-choice="Paper">
+            <h2>Paper</h2>
+            <img src="paper.png" alt="Paper" class="choice-icon">
+        </div>
+        <div class="item" data-choice="Scissors">
+            <h2>Scissors</h2>
+            <img src="scissor.png" alt="Scissors" class="choice-icon">
+        </div>
+       <!-- Results section -->
+        <div class="results">
+            <h3>Game Results</h3>
+            <p id="player-choice">You chose: <span>-</span></p>
+            <p id="computer-choice">Computer chose: <span>-</span></p>
+            <p id="game-result"><strong>-</strong></p>
+            <p>Player Wins: <span id="player-wins">0</span></p>
+            <p>Computer Wins: <span id="computer-wins">0</span></p>
+            <p>Ties: <span id="ties">0</span></p>
+        </div>
+
+
+        <!-- Restart button -->
+        <button id="reset-button">Restart Game</button>
+    </div>
+
+    <footer>
+        <p><span style="font-size: 25px;">Contact Us</span> <br>
+            Phone: (555) 123-4567 <br>
+            Email: contact@rockpaperscissors.com</p>
+    </footer>
+</body>
+</html>

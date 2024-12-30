@@ -1,0 +1,20 @@
+/* Footer Styles */
+footer {
+    background-color: #333; /* Dark background for footer */
+    color: #fff; /* White text color */
+    text-align: center; /* Center text */
+    padding: 20px 0; /* Vertical padding */
+    position: relative; /* Position relative for any absolute children */
+    bottom: 0; /* Stick to the bottom */
+    width: 100%; /* Full width */
+}
+
+.footer-content h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.5em; /* Font size for heading */
+}
+
+.footer-content p {
+    margin: 5px 0; /* Space between paragraphs */
+    font-size: 1em; /* Font size for text */
+}

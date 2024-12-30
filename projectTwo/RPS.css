@@ -1,0 +1,187 @@
+/* Header styles */
+header {
+    width: 100%;
+    background-color: aquamarine;
+    padding: 0;
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Title styles */
+.game-title {
+    font-size: 5em;
+    color: #333;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/*      Media screen size adjustment for the h1 header/game-title */
+
+    @media only screen and (max-width:480px){
+        
+        .game-title{font-size: 2em;
+        }
+    }
+
+
+/* RPS container */
+.RPS {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    background-color: gainsboro;
+    border: 2px solid green;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Individual item */
+.item {
+    text-align: center;
+    flex: 1 1 30%;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.item:hover {
+    transform: scale(1.1);
+}
+
+.choice-icon {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Results section */
+.results {
+    flex-basis: 100%; /* Full width */
+    background: linear-gradient(145deg, #f0f0f0, #d1d1d1); /* Soft gradient background */
+    border-radius: 15px; /* Curved corners */
+    border: 2px solid #4caf50; /* Border with a green accent */
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center; /* Center text alignment */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow effect */
+}
+
+.results h3 {
+    font-size: 2em;
+    color: #333;
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.results p {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+    font-weight: normal;
+}
+
+.results #game-result {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 15px 0;
+    color: #4caf50;
+    text-transform: capitalize;
+}
+
+.results #player-wins, #computer-wins {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+.results span {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2e7d32; /* Green color for numbers */
+}
+
+/* Adding some hover effect on results */
+.results:hover {
+    background: linear-gradient(145deg, #d1d1d1, #f0f0f0); /* Reverse gradient on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* More prominent shadow on hover */
+}
+
+    /*      Reset Section       */
+
+#reset-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: black; /* Set background to black */
+    border: none;
+    border-radius: 20px; /* Curved corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-button:hover {
+    background-color: #333; /* Darken the background on hover */
+}
+
+/*      Rules      div */
+
+.rules{
+    
+    font-size: 60px;
+    font-weight: 600;
+    color: #f0f0f0;
+    background-color: #2e7d32;    
+    
+
+    /*  Style for other headers */
+
+    text-align: center;
+    margin: 2%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: green;
+    border-radius: 30px;
+    text-shadow: rgb(0, 0, 0) 5px 5px 5px;
+    
+}
+
+.rules_description{
+
+    margin-left: 15%;
+    font-size: 20px;
+    text-shadow: none;
+    color: #333;
+    padding: 2%;
+    padding-left: 4%;
+    padding-right: 4%;
+    position: relative;
+    width: 60%;
+    overflow: auto;
+    background-color: gainsboro;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin-top: 1%;
+    margin-bottom: 3%;
+    box-shadow: 10px 10px 25px rgb(43, 43, 43);
+    border-radius: 15px;
+}

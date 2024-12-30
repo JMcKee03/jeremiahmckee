@@ -1,0 +1,25 @@
+/* header.css */
+header {
+    width: 100%; /* Make the header span across the screen */
+    min-height: 60px; /* Set a minimum height for better alignment */
+    background-color: aquamarine;
+}
+
+header ul {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
+    list-style-type: none;
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    background-color: greenyellow;
+}
+
+header ul li {
+    margin: 0 20px; /* Space between items */
+}
+
+header ul li a {
+    text-decoration: none; /* Remove underline */
+    color: black; /* Text color */
+}
